@@ -1,2 +1,1 @@
-# MobileFirst
-Cool Animations Cool Site
+I developed that with 2 months experience.
