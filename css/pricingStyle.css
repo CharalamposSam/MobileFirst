@@ -1,0 +1,362 @@
+:root {
+  --bigFont: 75px;
+  --medFont: 40px;
+  --smallFont: 20px;
+  --detailsFont: 15px;
+  --a: 190px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../images/bg-mesolongi.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+body::after {
+  content: '';
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  background-color: #037570;
+  opacity: .8;
+  z-index: -1;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px 30px 150px;
+}
+
+.pricing {
+  width: 100%;
+  max-width: 500px;
+}
+
+.caption {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: var(--medFont);
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.bigContainer {
+  width: 100%;
+  position: relative;
+  border-radius: 19px;
+  -webkit-box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.pricingPopUp {
+  width: 50px;
+  max-width: 600px;
+  height: 50px;
+  border-radius: 32px;
+  background-color: white;
+  position: absolute;
+  top: 87%;
+  left: 89%;
+  z-index: 100;
+  opacity: 0;
+  -webkit-box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.1);
+  transform: scale(0)
+}
+
+.pricingPopUpHeader{
+  width: 100%;
+  height: 70px;
+  background-color: #1cbbb4;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  opacity: 0;
+}
+.pricingPopUpcloseIcon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+.pricingPopUpMain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  color: #1cbbb4;
+  text-shadow: 0px 0px 100px white;
+  opacity: 0;
+}
+.pricingPopUpButton{
+    width: 190px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+    color: white;
+    background-color: #1cbbb4;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px
+}
+.pricingPopUpButton:active{
+  font-size: 22px;
+  
+}
+.pricingPopUpButton:hover{
+  transform: scale(1.03);
+}
+
+
+
+
+
+
+.btnShowMore {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+  font-size: 12px;
+  padding: 7px 7px 7px 14px;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: #1cbbb4;
+  color: white;
+  -webkit-box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+  outline: none;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.btnShowMore img {
+  width: 20px;
+  padding: 0 5px;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.btnAddToCard {
+  position: absolute;
+  bottom: 0;
+  right: 7%;
+  transform: scale(1) translateY(50%);
+  -webkit-transform: scale(1) translateY(50%);
+  -ms-transform: scale(1) translateY(50%);
+  transform-origin: bottom;
+  padding: 15px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  z-index: 100;
+  -webkit-box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -o-transition: opacity 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+}
+
+.btnAddToCardOpacity {
+  transform: scale(0) translateY(50%);
+  -webkit-transform: scale(0) translateY(50%);
+  -ms-transform: scale(0) translateY(50%);
+  transform-origin: bottom;
+}
+
+.btnAddToCard img {
+  width: 30px;
+}
+
+.btnStayOpen {
+  transform: scale(1) translateY(50%);
+}
+
+.bigContainer:hover>.btnAddToCard {
+  transform: scale(1) translateY(50%);
+  -webkit-transform: scale(1) translateY(50%);
+  -ms-transform: scale(1) translateY(50%);
+  -webkit-transition: transform 0.3s cubic-bezier(0.27, 1.97, 0.74, 0.95);
+  -o-transition: transform 0.3s cubic-bezier(0.27, 1.97, 0.74, 0.95);
+  transition: transform 0.3s cubic-bezier(0.27, 1.97, 0.74, 0.95);
+}
+
+.smallContainer {
+  width: 100%;
+  height: var(--a);
+  overflow: hidden;
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  border-radius: 15px;
+}
+
+.defaultCard {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.defaultCardPrice {
+  width: 50%;
+
+  color: #1cbbb4;
+  padding: 30px 0 0 30px;
+  border-top-left-radius: 15px;
+  font-size: var(--smallFont);
+  line-height: 1.1;
+  font-size: var(--smallFont);
+}
+
+.defaultCardPrice .spanPrice {
+  font-size: var(--bigFont);
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+.defaultCardPrice .spanEuro {
+  font-size: var(--medFont);
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+.defaultCardDetails {
+  width: 50%;
+  background-color: #1cbbb4;
+  color: white;
+  padding: 30px 0 0;
+  line-height: 1.6;
+  font-size: var(--detailsFont);
+}
+
+ul {
+  margin: 0;
+}
+
+.toggleCardOpacity {
+  opacity: 0;
+}
+
+.toggleCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.toggleCardPrice {
+  width: 50%;
+  color: #1cbbb4;
+  background-color: white;
+  padding: 0 30px;
+  line-height: 1.1;
+  font-size: var(--smallFont);
+}
+
+.toggleCardPrice .hr {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 15px;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+}
+
+.toggleCardPrice span {
+  font-size: var(--medFont);
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+.toggleCardDetails {
+  width: 50%;
+  background-color: #1cbbb4;
+  color: white;
+  padding: 0 0 40px;
+  line-height: 1.6;
+  font-size: var(--detailsFont);
+}
+
+.basicBorder {
+  background-color: white;
+}
+
+.premioumBorder {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4f4f4+0,d8d8d8+4,ffffff+50 */
+  background: rgb(244, 244, 244);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(200, 200, 200, 1) 0%, rgba(255, 255, 255, 1) 50%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(200, 200, 200, 1) 0%, rgba(255, 255, 255, 1) 50%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(200, 200, 200, 1) 0%, rgba(255, 255, 255, 1) 50%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ffffff', GradientType=0);
+  /* IE6-9 */
+}
+
+.enterprizeBorder {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4dfb2+0,ffffff+50 */
+  background: rgb(244, 223, 178);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(244, 223, 178, 1) 0%, rgba(255, 255, 255, 1) 50%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(244, 223, 178, 1) 0%, rgba(255, 255, 255, 1) 50%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(244, 223, 178, 1) 0%, rgba(255, 255, 255, 1) 50%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4dfb2', endColorstr='#ffffff', GradientType=0);
+  /* IE6-9 */
+}
+
+@media only screen and (min-width: 640px) {
+  .pricing {
+    margin: 0 1%;
+  }
+}
+
+@media only screen and (min-width: 1640px) {
+  body::after {
+    height: 100vh;
+  }
+}
+.aa{
+  height: 400px!important;
+}

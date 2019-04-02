@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pricing</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/menuStyle.css">
+    <link rel="stylesheet" href="../css/pricingStyle.css">
+
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class=logInPopUp>
+        <div class="popUpHeader">
+            Feeling ready?
+            <i class="fas fa-times closeIcon"></i>
+        </div>
+        <div class="popUpMain">
+            <h5 class="popUpMainH5">Create a guest account to proceed.</h5>
+            <form>
+                <div class="formInput" id="active">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="formInput">
+                    <input type="email" placeholder="E-Mail">
+                </div>
+                <div class="formInput">
+                    <input type="password" placeholder="Password">
+                </div>
+            </form>
+        </div>
+        <div class="popUpFooter">
+            <button class="btn"><i class="fas fa-angle-down downArrowIcon"></i></button>
+            <div class="btnSubmitAnim">
+                <span>Submit</span>
+                <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100px" width="100px"
+                    viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                    <path class="stroke-solid" fill="none" stroke="#6bd5d0"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+                        C97.3,23.7,75.7,2.3,49.9,2.5"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <a href="../index.html"><img src="../images/logo.svg" alt="logo" class="logo"></a>
+        <img src="../images/logIn.svg" alt="menu-icon" class="logIn">
+        <img src="../images/menu.svg" alt="menu-icon" class="menu" onclick="openMenu()">
+        <div class="sidemenu" id="sidemenu">
+            <hr align="left">
+            <div><span class="menuLinks">About</span></div>
+            <br>
+            <div><a><span class="menuLinks">Pricing</span></a></div>
+            <br>
+            <div><span class="menuLinks">Contact</span></div>
+        </div>
+        <div class="sidemenuclose" id="sidemenuclose" onclick="closeMenu()"></div>
+        <div class="navBg"></div>
+    </nav>
+
+    <main>
+        <div class="pricing">
+            <div class="caption">Basic</div>
+            <div class="bigContainer basicBorder">
+                <div class="pricingPopUp">
+                    <div class="pricingPopUpHeader">
+                        Felling Ready?
+                        <i class="fas fa-times pricingPopUpcloseIcon"></i>
+                    </div>
+                    <div class="pricingPopUpMain">
+                        You are about to buy the Basic package..
+                        <button class="pricingPopUpButton">Proceed</button>
+                    </div>
+                </div>
+                <button class="btnShowMore" rel="btn1" id="btn1">Show more<img src="../images/arrow.svg" alt="arrow"></button>
+                <button class="btnAddToCard btnAddToCardOpacity"><img src="../images/addToCard.svg" alt="btnAddToCard"></button>
+                <div class="smallContainer">
+                    <div class="defaultCard">
+                        <div class="defaultCardPrice basicBorder">
+                            <span class="spanPrice">10</span><span class="spanEuro">€</span>
+                            <br>
+                            per month
+                            <br>
+                            paid annualy
+                        </div>
+                        <div class="defaultCardDetails">
+                            <ul>
+                                <li>Option one</li>
+                                <li>Option two</li>
+                                <li>Option three</li>
+                                <li>Option four</li>
+                                <li>Option five</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toggleCard">
+                        <div class="toggleCardPrice">
+                            <hr color="#1cbbb4" class="hr">
+                            <div class=toggleCardOpacity>
+                                <span>12€</span>
+                                <br>
+                                per month
+                                <br>
+                                paid annualy
+                            </div>
+                        </div>
+                        <div class="toggleCardDetails">
+                            <ul class="toggleCardOpacity">
+                                <li>Option six</li>
+                                <li>Option seven</li>
+                                <li>Option eight</li>
+                                <li>Option nine</li>
+                                <li>Option ten</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pricing">
+            <div class="caption">Premium</div>
+            <div class="bigContainer premioumBorder">
+                <div class="pricingPopUp">
+                    <div class="pricingPopUpHeader">
+                        Felling Ready?
+                        <i class="fas fa-times pricingPopUpcloseIcon"></i>
+                    </div>
+                    <div class="pricingPopUpMain premioumBorder">
+                        You are about to buy the Premium package..
+                        <button class="pricingPopUpButton">Proceed</button>
+                    </div>
+                </div>
+                <button class="btnShowMore" rel="btn2" id="btn2">Show more<img src="../images/arrow.svg" alt="arrow"></button>
+                <button class="btnAddToCard btnAddToCardOpacity"><img src="../images/addToCard.svg" alt="btnAddToCard"></button>
+                <div class="smallContainer">
+                    <div class="defaultCard">
+                        <div class="defaultCardPrice premioumBorder">
+                            <span class="spanPrice">24</span><span class="spanEuro">€</span>
+                            <br>
+                            per month
+                            <br>
+                            paid annualy
+                        </div>
+                        <div class="defaultCardDetails">
+                            <ul>
+                                <li>Option one</li>
+                                <li>Option two</li>
+                                <li>Option three</li>
+                                <li>Option four</li>
+                                <li>Option five</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toggleCard">
+                        <div class="toggleCardPrice">
+                            <hr color="#1cbbb4" class="hr">
+                            <div class=toggleCardOpacity>
+                                <span>12€</span>
+                                <br>
+                                per month
+                                <br>
+                                paid annualy
+                            </div>
+                        </div>
+                        <div class="toggleCardDetails">
+                            <ul class="toggleCardOpacity">
+                                <li>Option six</li>
+                                <li>Option seven</li>
+                                <li>Option eight</li>
+                                <li>Option nine</li>
+                                <li>Option ten</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pricing">
+            <div class="caption">Enterprize</div>
+            <div class="bigContainer">
+                <div class="pricingPopUp">
+                    <div class="pricingPopUpHeader">
+                        Felling Ready?
+                        <i class="fas fa-times pricingPopUpcloseIcon"></i>
+                    </div>
+                    <div class="pricingPopUpMain enterprizeBorder">
+                        You are about to buy the Enterprize package..
+                        <button class="pricingPopUpButton">Proceed</button>
+                    </div>
+                </div>
+                <button class="btnShowMore" rel="btn3" id="btn3">Show more<img src="../images/arrow.svg" alt="arrow"></button>
+                <button class="btnAddToCard btnAddToCardOpacity"><img src="../images/addToCard.svg" alt="btnAddToCard"></button>
+                <div class="smallContainer" id="test">
+                    <div class="defaultCard">
+                        <div class="defaultCardPrice enterprizeBorder">
+                            <span class="spanPrice">59</span><span class="spanEuro">€</span>
+                            <br>
+                            per month
+                            <br>
+                            paid annualy
+                        </div>
+                        <div class="defaultCardDetails">
+                            <ul>
+                                <li>Option one</li>
+                                <li>Option two</li>
+                                <li>Option three</li>
+                                <li>Option four</li>
+                                <li>Option five</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toggleCard">
+                        <div class="toggleCardPrice">
+                            <hr color="#1cbbb4" class="hr">
+                            <div class=toggleCardOpacity>
+                                <span>12€</span>
+                                <br>
+                                per month
+                                <br>
+                                paid annualy
+                            </div>
+                        </div>
+                        <div class="toggleCardDetails">
+                            <ul class="toggleCardOpacity">
+                                <li>Option six</li>
+                                <li>Option seven</li>
+                                <li>Option eight</li>
+                                <li>Option nine</li>
+                                <li>Option ten</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+    <script type="text/javascript" src="../js/pricing.js"></script>
+    <script src="../js/LogIn.js"></script>
+</body>
+
+</html>
