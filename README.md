@@ -1,2 +1,2 @@
 # MobileFirst
-Cool Animations Coll Site
+Cool Animations Cool Site
