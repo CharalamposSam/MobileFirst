@@ -76,7 +76,7 @@ main {
   opacity: 0;
   -webkit-box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.1);
-  transform: scale(0)
+  transform: scale(0);
 }
 
 .pricingPopUpHeader{
@@ -103,7 +103,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
+  padding: 40px;
   color: #1cbbb4;
   text-shadow: 0px 0px 100px white;
   opacity: 0;
@@ -230,7 +230,6 @@ main {
 
 .defaultCardPrice {
   width: 50%;
-
   color: #1cbbb4;
   padding: 30px 0 0 30px;
   border-top-left-radius: 15px;
@@ -273,6 +272,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 100%;
 }
 
 .toggleCardPrice {
@@ -344,6 +344,30 @@ ul {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4dfb2', endColorstr='#ffffff', GradientType=0);
   /* IE6-9 */
+}
+
+@media only screen and (max-width: 400px) {
+  .defaultCardPrice {
+    padding: 30px 0 0 20px;
+  }
+  .toggleCardPrice {
+    padding: 0 20px;
+  }
+  .defaultCardPrice .spanPrice {
+    font-size: 65px;
+  }
+  .defaultCardPrice .spanEuro {
+    font-size: 30px;
+  }
+  .defaultCardDetails {
+    font-size: 12px;
+  }
+  .defaultCardDetails ul {
+    margin-top: 23px;
+  }
+  .toggleCardOpacity {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (min-width: 640px) {
